@@ -10,6 +10,7 @@ extra_commands.append("Mission and Values")
 static_questions.append("Which industry is you company in? (Services, Manifacturing or Disposal. If there is an overlay, please focus on the aspect you want to imporve the most)")
 extra_commands.append("Industries Served")
 
+
 static_questions.append("Can you please provide more information about that industry?")
 extra_commands.append("Key Trends and Benchmarks")
 
@@ -45,3 +46,5 @@ extra_commands.append("Expense Categories")
 
 static_questions.append("what type of date is your company managing (records, reports, ...) and in what form are they available in (numbers, pictures, spreadsheets, ... )?  What about the consistency and completeness of the data?")
 extra_commands.append("Data Quality")
+
+question_ctr = len(static_questions)
