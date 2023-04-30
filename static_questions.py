@@ -1,4 +1,3 @@
-
 static_questions = []
 extra_commands = []
 static_questions.append("What is the name of the company?")
@@ -7,7 +6,7 @@ extra_commands.append("Company name")
 static_questions.append("Tell me more about the company? (e.g. company's mission and values)")
 extra_commands.append("Mission and Values")
 
-static_questions.append("Which industry is you company in? (Services, Manifacturing or Disposal. If there is an overlay, please focus on the aspect you want to imporve the most)")
+static_questions.append("Which industry is you company in? (Services, Manufacturing or Disposal. If there is an overlay, please focus on the aspect you want to improve the most)")
 extra_commands.append("Industries Served")
 
 
@@ -44,7 +43,7 @@ extra_commands.append("Expense Categories")
 static_questions.append("How much do you spend on procurement, marketing, or maintenance?")
 extra_commands.append("Expense Categories")
 
-static_questions.append("what type of date is your company managing (records, reports, ...) and in what form are they available in (numbers, pictures, spreadsheets, ... )?  What about the consistency and completeness of the data?")
+static_questions.append("What type of data is your company managing (records, reports, ...) and in what form are they available (numbers, pictures, spreadsheets, ... )?  What about the consistency and completeness of the data?")
 extra_commands.append("Data Quality")
 
 question_ctr = len(static_questions)
