@@ -12,7 +12,6 @@ co = cohere.Client(os.getenv("COHERE_API_KEY"))
 
 # implement the logic of the discussion
 def build_question(context):
-    print("inside logic", context)
     report = 0
     new_question = ""
     new_response = ""
@@ -62,7 +61,6 @@ def build_question(context):
         , "response": new_response, "id": id}
     context.append(tmp)
     return report, context, filename
-
 
 def chat():
     pass

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Json, ValidationError
-from typing import Any, Optional, List
+from typing import Any
 from logic import build_question
 from fastapi.middleware.cors import CORSMiddleware
 import openai
@@ -11,18 +11,8 @@ from static_questions import question_ctr
 
 app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=['*'],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-
 class AskItem(BaseModel):
-    context: Any
-
+    context: Json[Any]
 
 @app.post("/ask")
 async def askEndpoint(item: AskItem):
